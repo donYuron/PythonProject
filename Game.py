@@ -186,7 +186,7 @@ class Bullet(pygame.sprite.Sprite):
         for bug in bugS:
             if pygame.sprite.collide_mask(self, bug[0]):
                 bug[0].score += 1
-                if bug[0].score == 6:
+                if bug[0].score == 5:
                     bug[0].death = 1
                     Y_kord.killed += 1
                 self.kill()
